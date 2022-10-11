@@ -10,7 +10,7 @@ export const Header = () => {
         />
         <div className="relative bg-opacity-75 bg-purple-700">
           <svg
-            className="absolute inset-x-0 bottom-0 text-white"
+            className="absolute inset-x-0 bottom-0 text-base-100"
             viewBox="0 0 1160 163"
           >
             <path

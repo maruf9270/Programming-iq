@@ -1,13 +1,22 @@
-import React from 'react';
-import { Footer } from './Footer/Footer';
+import React, { createContext } from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Body from './Body/Body';
+
 import { Header } from './Hero/Hero';
+export const AllQuizContext = createContext([]);
+
+
+// Loading All quiz data from api
+
 
 const Home = () => {
+    const allQuizData = useLoaderData()
+   
     return (
-        <div>
-           <Header></Header>
-           <Footer></Footer>
-        </div>
+        <AllQuizContext.Provider value={allQuizData}>
+            <Header></Header>
+            <Body></Body>
+        </AllQuizContext.Provider>
     );
 };
 

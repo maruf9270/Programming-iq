@@ -1,9 +1,9 @@
 import React from "react";
 export const Footer = () => {
     return (
-      <div className="relative mt-16 bg-purple-400">
+      <div className="relative mt-16 bg-primary">
         <svg
-          className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-purple-400"
+          className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 bg-base-100 text-primary"
           preserveAspectRatio="none"
           viewBox="0 0 1440 54"
         >

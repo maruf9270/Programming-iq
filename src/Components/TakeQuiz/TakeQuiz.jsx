@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import SingleQuiz from './SingleQuiz/SingleQuiz';
 
 const TakeQuiz = () => {
@@ -14,6 +15,9 @@ const TakeQuiz = () => {
             quizeNO++
             return <SingleQuiz key={quizeData.id} quizeData={quizeData} quizeNO={quizeNO}></SingleQuiz>
           })}
+           <ToastContainer></ToastContainer>
+           
+           
         </div>
     );
 };

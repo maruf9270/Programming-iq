@@ -2,12 +2,24 @@ import React from 'react';
 import SingleQuizeOption from './SingleQuizeOption/SingleQuizeOption';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { toastSuccess } from './Toast/Toast';
 
 
 
 
 const SingleQuiz = (props) => {
-    const notify = () => toast("Wow so easy !");
+    const notify = () => {
+     return toast('🦄 Wow so easy!', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            })
+    };
     const quizNo = props.quizeNO
     const quizeQuestion = props.quizeData.question
     const options = props.quizeData.options
@@ -20,7 +32,7 @@ const SingleQuiz = (props) => {
     const checkingAnswer = (props1) =>{
         console.log(props1);
         if(props1===correctAnswer){
-           notify()
+          toastSuccess('')
         }
         else{
             alert('wrong answer')

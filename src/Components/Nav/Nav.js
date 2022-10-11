@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from 'react';
 import Logo from '../../Images/Logo.png'
+import { Link } from "react-router-dom";
 
 export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,14 +44,15 @@ export const Nav = () => {
               </a>
             </li>
             <li>
-              <a
-                href="/"
+              
+              <Link
+                to="/statistics"
                 aria-label="Product pricing"
                 title="Product pricing"
                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
               >
-                Pricing
-              </a>
+                Statistics
+              </Link>
             </li>
             <li>
               <a

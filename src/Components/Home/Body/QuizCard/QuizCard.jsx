@@ -11,7 +11,7 @@ const QuizCard = (props) => {
         <div className="card-body">
             <h2 className="card-title">
             {name}
-            <div className="badge badge-secondary">NEW</div>
+           
             </h2>
             <Link to={`takequiz/${id}`}><button className='btn text-black bg-purple-400 hover:bg-purple-700 px-10 whitespace-nowrap'>Take Quiz</button></Link>
             <div className="card-actions justify-start">

@@ -3,8 +3,6 @@ import { Link, useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {
     const error = useRouteError();
-    console.error(error)
-    console.log(error.status);
     return (
         
         <div className='h-[100vh]'>

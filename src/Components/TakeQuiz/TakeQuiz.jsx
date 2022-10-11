@@ -9,7 +9,7 @@ const TakeQuiz = () => {
     let quizeNO= 0;
   
     return (
-        <div className='mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl ]'>
+        <div className='mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl ] my-24 flex justify-center items-center flex-col'>
           {quizeDatas.map(quizeData=>{
             quizeNO++
             return <SingleQuiz key={quizeData.id} quizeData={quizeData} quizeNO={quizeNO}></SingleQuiz>

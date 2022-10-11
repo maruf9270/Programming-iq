@@ -39,7 +39,7 @@ const SingleQuiz = (props) => {
 
 
     return (
-        <div className='w-[96%] md:w-full h-full md:h-96 bg-primary my-5 rounded-lg relative'>
+        <div className='w-[96%] md:w-full h-full md:h-full bg-primary my-10 rounded-lg relative'>
             <div className='text-center py-3'>
             <h2 className='text-4xl'>Quiz No:{quizNo}</h2>
             </div>

@@ -18,12 +18,14 @@ const SingleQuiz = (props) => {
     const options = props.quizeData.options
     const correctAnswer = props.quizeData.correctAnswer;
    
+    let arrkey = 0;
+   
     
    
    
    
     const checkingAnswer = (props1) =>{
-        console.log(props1);
+        
         if(props1===correctAnswer){
           toastSuccess('Correct Answer')
         }
@@ -48,7 +50,12 @@ const SingleQuiz = (props) => {
             </div>
 
             <div className='w-[94%] md:w-[90%] h-auto md:h-52 bg-base-100 mx-auto flex flex-wrap justify-center items-center my-7'>
-                {options.map(option=> <SingleQuizeOption option={option} checkingAnswer={checkingAnswer} ></SingleQuizeOption>)}
+                {options.map(option=> {
+
+                    arrkey++
+                    return <SingleQuizeOption option={option} checkingAnswer={checkingAnswer} key={arrkey}></SingleQuizeOption>
+
+                })}
 
             </div>
 

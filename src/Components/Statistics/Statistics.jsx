@@ -8,7 +8,7 @@ const Statistics = () => {
     const data = Loaderdata.data
 
     
-   console.log(data);
+  
     return (
         <div className=' h-[500px] flex justify-center items-center flex-col bg-white w-[92%] mx-auto rounded-md py-7'>
             <h2 className='text-center py-5 text-2xl w-full text-black font-bold ' >Total Quiz qustion added in this month</h2>

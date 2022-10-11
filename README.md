@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# PROGRAMMING-IQ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is created for the developers who wants to extend their knowledge and test their IQ about web-development.
 
-## Available Scripts
+## Component used
+***Daisy ui. \
 
-In the project directory, you can run:
 
 ### `npm start`
 

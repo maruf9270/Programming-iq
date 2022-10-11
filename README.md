@@ -3,7 +3,7 @@
 This project is created for the developers who wants to extend their knowledge and test their IQ about web-development.
 
 ## Component used
-***Daisy ui. \
+***Daisy ui.***
 
 
 ### `npm start`

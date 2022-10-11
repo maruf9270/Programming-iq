@@ -8,7 +8,7 @@ const Body = () => {
     
    
     return (
-        <div className='flex flex-wrap justify-around my-7'>
+        <div className='flex flex-wrap justify-around my-11'>
             {allQuizData.map(quizData => <QuizCard key={quizData.id} quizData={quizData}></QuizCard>)}
         </div>
     );

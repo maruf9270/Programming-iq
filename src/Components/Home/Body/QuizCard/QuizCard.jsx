@@ -7,7 +7,7 @@ const QuizCard = (props) => {
     const {logo,name,total,id} = quizData;
 
     return (
-        <div className="card bg-primary shadow-xl h-96 w-52">
+        <div className="card bg-primary shadow-xl h-96 w-52 my-4">
         <figure><img src={logo} alt="Shoes" /></figure>
         <div className="card-body">
             <h2 className="card-title">

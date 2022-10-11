@@ -7,10 +7,10 @@ export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     return (
-      <div class="px-4 py-3 bg-[#e5e5e5] mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 shadow-lg md:rounded-lg my-5">
-        <div class="relative flex items-center justify-between">
-          <a
-            href="/"
+      <div class="px-4 py-3 bg-primary text-white mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 shadow-lg md:rounded-lg my-5">
+        <div class="relative flex items-center justify-between text-white">
+          <Link
+            to={'/'}
             aria-label="Programming IQ"
             title="Programming IQ"
             class="inline-flex items-center"
@@ -18,17 +18,17 @@ export const Nav = () => {
 
             <img src={Logo} alt="Logo text" title="Porgramming IQ" className="w-[12%]"/>
 
-            <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+            <span class="ml-2 text-xl font-bold tracking-wide uppercase">
             Programming IQ
             </span>
-          </a>
+          </Link>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
               <Link
                to="/"
                 aria-label="Home"
                 title="Home"
-                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-purple-400"
               >
                 Home
               </Link>
@@ -38,7 +38,7 @@ export const Nav = () => {
                 to="/blog"
                 aria-label="Blog"
                 title="Blog"
-                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-purple-400"
               >
                 Blog
               </Link>
@@ -49,7 +49,7 @@ export const Nav = () => {
                 to="/statistics"
                 aria-label="Statistics"
                 title="Statistics"
-                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-purple-400"
               >
                 Statistics
               </Link>
@@ -59,20 +59,20 @@ export const Nav = () => {
                 to="/about"
                 aria-label="About us"
                 title="About us"
-                class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-purple-400"
               >
                 About us
               </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                to="/"
                 class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
               >
                 Sign up
-              </a>
+              </Link>
             </li>
           </ul>
           <div class="lg:hidden">
@@ -98,21 +98,21 @@ export const Nav = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div class="absolute top-0 left-0 w-full">
-                <div class="p-5 bg-white border rounded shadow-sm">
+              <div class="absolute z-50 top-0 left-0 w-full bg-primary">
+                <div class="p-5 border rounded shadow-sm bg-primary">
                   <div class="flex items-center justify-between mb-4">
                     <div>
-                      <a
-                        href="/"
+                      <Link
+                        to="/"
                         aria-label="Company"
                         title="Company"
                         class="inline-flex items-center"
                       >
                         <img src={Logo} alt="" className="w-[9%]"/>
-                        <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                        <span class="ml-2 text-xl font-bold tracking-wide text-white uppercase">
                           Programming IQ
                         </span>
-                      </a>
+                      </Link>
                     </div>
                     <div>
                       <button
@@ -133,54 +133,54 @@ export const Nav = () => {
                   <nav>
                     <ul class="space-y-4">
                       <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        <Link
+                          to="/"
+                          aria-label="Home"
+                          title="Home"
+                          class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Product
-                        </a>
+                          Home
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        <Link
+                          to="/blog"
+                          aria-label="Blog"
+                          title="Blog"
+                          class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Features
-                        </a>
+                          Blog
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          aria-label="Product pricing"
-                          title="Product pricing"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        <Link
+                          to="/statistics"
+                          aria-label="Statistics"
+                          title="Statistics"
+                          class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
-                          Pricing
-                        </a>
+                          Statistics
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="/about"
                           aria-label="About us"
                           title="About us"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           About us
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="/"
+                        <Link
+                          to="/"
                           class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                           aria-label="Sign up"
                           title="Sign up"
                         >
                           Sign up
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>

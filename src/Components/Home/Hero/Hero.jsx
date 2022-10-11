@@ -1,14 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Banner from "../../../Images/Banner.jpg"
 export const Header = () => {
     return (
       <div className="relative">
         <img
           src={Banner}
-          className="absolute inset-0 object-cover w-full h-full"
+          className="absolute inset-0 object-cover w-full h-[99%]"
           alt=""
         />
-        <div className="relative bg-opacity-75 bg-purple-700">
+        <div className="relative bg-opacity-75 bg-base-100">
           <svg
             className="absolute inset-x-0 bottom-0 text-base-100"
             viewBox="0 0 1160 163"
@@ -28,8 +29,8 @@ export const Header = () => {
                 <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
                  Join with us With a variety of courses. We have the best instructure to give you the best knowledge about Web-developement. Take a IQ test below to test your IQ about programming. This will help you to find your weakness. 
                 </p>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   aria-label=""
                   className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-400 hover:text-teal-700"
                 >
@@ -41,12 +42,12 @@ export const Header = () => {
                   >
                     <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
                   </svg>
-                </a>
+                </Link>
               </div>
-              <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
+              <div className="w-full max-w-xl xl:px-8 xl:w-5/12 text-black">
                 <div className="bg-white rounded shadow-2xl p-7 sm:p-10">
                   <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
-                    Sign up for updates
+                    Sign up 
                   </h3>
                   <form>
                     <div className="mb-1 sm:mb-2">
@@ -57,7 +58,7 @@ export const Header = () => {
                         First name
                       </label>
                       <input
-                        placeholder="John"
+                        placeholder="Maruf"
                         required
                         type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-purple-400 focus:outline-none focus:shadow-outline"
@@ -73,7 +74,7 @@ export const Header = () => {
                         Last name
                       </label>
                       <input
-                        placeholder="Doe"
+                        placeholder="Ahmed"
                         required
                         type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-purple-400 focus:outline-none focus:shadow-outline"
@@ -89,7 +90,7 @@ export const Header = () => {
                         E-mail
                       </label>
                       <input
-                        placeholder="john.doe@example.org"
+                        placeholder="Maruf@example.org"
                         required
                         type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-purple-400 focus:outline-none focus:shadow-outline"
@@ -106,7 +107,7 @@ export const Header = () => {
                       </button>
                     </div>
                     <p className="text-xs text-gray-600 sm:text-sm">
-                      We respect your privacy. Unsubscribe at any time.
+                      Dive into the ocean of Knowledge
                     </p>
                   </form>
                 </div>

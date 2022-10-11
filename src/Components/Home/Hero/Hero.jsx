@@ -22,13 +22,11 @@ export const Header = () => {
             <div className="flex flex-col items-center justify-between xl:flex-row">
               <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                  The quick, brown fox <br className="hidden md:block" />
-                  jumps over a lazy dog
+                  Don't waste time by <br className="hidden md:block" />
+                  Seacchig for resourses
                 </h2>
                 <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                  quae.
+                 Join with us With a variety of courses. We have the best instructure to give you the best knowledge about Web-developement. Take a IQ test below to test your IQ about programming. This will help you to find your weakness. 
                 </p>
                 <a
                   href="/"

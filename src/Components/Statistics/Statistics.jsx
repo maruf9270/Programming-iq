@@ -10,8 +10,8 @@ const Statistics = () => {
     
    console.log(data);
     return (
-        <div className='md:w-full h-[500px] flex justify-center items-center flex-col'>
-            <h2 className='text-center py-5 text-2xl w-full' >Total Quiz qustion added in this month</h2>
+        <div className=' h-[500px] flex justify-center items-center flex-col bg-white w-[92%] mx-auto rounded-md py-7'>
+            <h2 className='text-center py-5 text-2xl w-full text-black font-bold ' >Total Quiz qustion added in this month</h2>
             <ResponsiveContainer>
                  <LineChart
                 width={500}

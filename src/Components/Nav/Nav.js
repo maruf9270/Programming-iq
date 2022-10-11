@@ -24,45 +24,45 @@ export const Nav = () => {
           </a>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
+              <Link
+               to="/"
+                aria-label="Home"
+                title="Home"
                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
               >
-                Product
-              </a>
+                Home
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
+              <Link
+                to="/blog"
+                aria-label="Blog"
+                title="Blog"
                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
               >
-                Features
-              </a>
+                Blog
+              </Link>
             </li>
             <li>
               
               <Link
                 to="/statistics"
-                aria-label="Product pricing"
-                title="Product pricing"
+                aria-label="Statistics"
+                title="Statistics"
                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
               >
                 Statistics
               </Link>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                to="/about"
                 aria-label="About us"
                 title="About us"
                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
               >
                 About us
-              </a>
+              </Link>
             </li>
             <li>
               <a

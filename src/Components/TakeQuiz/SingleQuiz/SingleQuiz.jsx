@@ -15,6 +15,10 @@ const SingleQuiz = (props) => {
   
     const quizNo = props.quizeNO
     const quizeQuestion = props.quizeData.question
+    
+    const endingPoint = quizeQuestion.length -4
+     const quizeQuestionSubstringed = quizeQuestion.substring(3, endingPoint)
+
     const options = props.quizeData.options
     const correctAnswer = props.quizeData.correctAnswer;
    
@@ -46,7 +50,7 @@ const SingleQuiz = (props) => {
             <h2 className='text-4xl'>Quiz No:{quizNo}</h2>
             </div>
             <div className='text-center text-xl'>
-               {quizeQuestion ? quizeQuestion : 'No data found'}
+               {quizeQuestionSubstringed ? quizeQuestionSubstringed : 'No data found'}
             </div>
 
             <div className='w-[94%] md:w-[90%] h-auto md:h-52 bg-base-100 mx-auto flex flex-wrap justify-center items-center my-7'>
